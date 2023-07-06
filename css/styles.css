@@ -24,8 +24,9 @@
   width: 30%;
 }
 
-.font-color {
+.font-style {
   color: #172b4d;
+  line-height: 1.5em;
 }
 
 body {
