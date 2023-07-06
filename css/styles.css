@@ -1,0 +1,23 @@
+nav {
+  width: 30%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0.5em;
+}
+
+nav ul li a {
+  color: #344563;
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: bold;
+}
