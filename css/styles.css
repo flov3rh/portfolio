@@ -17,22 +17,19 @@ body {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  width: 30%;
+  margin: auto;
 }
 
 .font-color {
   color: #172b4d;
 }
 
-nav {
-  width: 30%;
-  margin: auto;
-}
-
 ul {
   color: #344563;
 }
 
-nav ul li {
+ul li {
   margin: 0.5em;
 }
 
