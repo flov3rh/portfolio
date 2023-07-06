@@ -1,5 +1,9 @@
-body {
-  font-family: Inter, sans-serif;
+#down-button {
+  margin: 3.5em auto;
+  border: solid 0.1px;
+  padding: 0.2em;
+  border-radius: 10px;
+  border-color: gray;
 }
 
 .background {
@@ -25,6 +29,10 @@ body {
   color: #172b4d;
 }
 
+body {
+  font-family: Inter, sans-serif;
+}
+
 ul {
   color: #344563;
 }
@@ -33,7 +41,7 @@ ul li {
   margin: 0.5em;
 }
 
-ul li a {
+a {
   font-size: 0.8em;
   text-decoration: none;
   font-weight: bold;
