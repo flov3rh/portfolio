@@ -6,6 +6,8 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -13,10 +15,8 @@ nav {
   margin: auto;
 }
 
-nav ul {
-
-  margin: 0;
-  padding: 0;
+ul {
+  color: #344563;  
 }
 
 nav ul li {
@@ -24,7 +24,6 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #344563;
   font-size: 0.8em;
   text-decoration: none;
   font-weight: bold;
