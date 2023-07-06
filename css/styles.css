@@ -10,13 +10,17 @@ body {
   padding: 0;
 }
 
+.font-color {
+  color: #172b4d;
+}
+
 nav {
   width: 30%;
   margin: auto;
 }
 
 ul {
-  color: #344563;  
+  color: #344563;
 }
 
 nav ul li {
@@ -27,6 +31,7 @@ nav ul li a {
   font-size: 0.8em;
   text-decoration: none;
   font-weight: bold;
+  color: inherit; 
 }
 
 header {
@@ -37,15 +42,10 @@ header {
 
 h1 {
   font-size: 2.1em;
-  color: #172B4D;
   font-weight: bold;
 }
 
 span {
-  color: #36B37E;
+  color: #36b37e;
   display: block;
-}
-
-p {
-  color: #172B4D;
 }
