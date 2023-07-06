@@ -1,12 +1,16 @@
+.list-format {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
 nav {
   width: 30%;
   margin: auto;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
+
   margin: 0;
   padding: 0;
 }
