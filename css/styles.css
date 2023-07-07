@@ -91,7 +91,7 @@ span {
     right: 0;
   }
 
-  .hamburguer:hover~.list-format {
+  .hamburguer:hover~.list-format, nav .list-format:hover {
     display: flex;
     flex-direction: column;
     float: right;
