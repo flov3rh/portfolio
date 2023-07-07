@@ -43,16 +43,21 @@
 .list-container {
   width: inherit;
   display: grid;
-  grid-template-columns: repeat(4,20%);
+  grid-template-columns: repeat(4, 20%);
   justify-content: center;
   grid-gap: 3%;
 }
 
-.list-container li{
+ul li {
+  font-family: inherit;
+  margin: 0.5em;
+}
+
+.list-container li {
   background-color: rgba(235, 240, 238, 1);
   width: 100%;
   line-height: 1;
-  font-size: .6em;
+  font-size: 0.6em;
   font-weight: 500;
   text-align: center;
   border-radius: 5px;
@@ -63,18 +68,17 @@
 .container {
   display: grid;
   grid-gap: 3%;
-  grid-template-columns: repeat(3,33%);
+  grid-template-columns: repeat(3, 33%);
   width: 90%;
   margin: 50px auto;
+  justify-content: center;
 }
 
 .grid-item {
-  margin-left: 2em;
   text-align: center;
   border: 1px solid rgba(235, 240, 238, 1);
   border-radius: 5px;
   padding: 1em;
-
 }
 
 .grid-item img {
@@ -85,9 +89,9 @@
   background-color: rgba(54, 179, 127, 1);
   border-radius: 5px;
   color: white;
-  font-size: .7em;
+  font-size: 0.7em;
   border: none;
-  padding: .8em;
+  padding: 0.8em;
   margin: 2em;
 }
 
@@ -101,11 +105,6 @@ label {
 
 ul {
   color: #344563;
-}
-
-ul li {
-  font-family: inherit;
-  margin: 0.5em;
 }
 
 a {
