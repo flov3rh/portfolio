@@ -40,6 +40,26 @@
   font-size: 1em;
 }
 
+.list-container {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4,20%);
+  justify-content: center;
+  grid-gap: 3%;
+}
+
+.list-container li{
+  background-color: rgba(235, 240, 238, 1);
+  width: 100%;
+  line-height: 1;
+  font-size: .8em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
 .container {
   display: grid;
   grid-gap: 3%;
@@ -69,6 +89,7 @@ ul {
 }
 
 ul li {
+  font-family: inherit;
   margin: 0.5em;
 }
 
@@ -89,7 +110,7 @@ h1 {
   font-weight: bold;
 }
 
-span {
+h1 span {
   color: #36b37e;
   display: block;
 }
