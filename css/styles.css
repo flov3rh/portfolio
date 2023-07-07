@@ -11,6 +11,10 @@
   font-weight: bold;
 }
 
+#about {
+  width: 80%; 
+}
+
 .hamburguer {
   display: none;
   float: right;
