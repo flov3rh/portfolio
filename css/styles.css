@@ -70,10 +70,20 @@
 
 .grid-item {
   margin-left: 2em;
+  text-align: center;
 }
 
 .grid-item img {
   width: 100%;
+}
+
+.project-button {
+  background-color: rgba(54, 179, 127, 1);
+  border-radius: 5px;
+  color: white;
+  font-size: .7em;
+  border: none;
+  padding: .8em;
 }
 
 body {
