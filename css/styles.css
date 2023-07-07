@@ -6,18 +6,30 @@
   border-color: gray;
 }
 
-#middle h3 {
-  text-align: center;
-  font-weight: bold;
-}
-
 #about {
   width: 80%;7
 }
 
 #about img {
+  border: 1px solid white;
   border-radius: 100px;
   width: 50px;
+}
+
+#about div div{
+  background-color: lightgray;
+}
+
+#about div ul{
+  padding-bottom: 25px;
+}
+
+#about div li{
+  color: rgba(54, 179, 126, 1);
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 0.66em;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .hamburguer {
@@ -55,6 +67,12 @@
   grid-template-columns: repeat(4, 20%);
   justify-content: center;
   grid-gap: 3%;
+}
+
+h3,
+h4 {
+  text-align: center;
+  font-weight: bold;
 }
 
 ul li {
