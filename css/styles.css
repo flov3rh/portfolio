@@ -6,6 +6,11 @@
   border-color: gray;
 }
 
+#middle h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
 .hamburguer {
   display: none;
   float: right;
@@ -32,6 +37,23 @@
 .font-style {
   color: #172b4d;
   line-height: 1.5em;
+  font-size: 1em;
+}
+
+.container {
+  display: grid;
+  grid-gap: 3%;
+  grid-template-columns: repeat(3,30%);
+  width: 90%;
+  margin: 50px auto;
+}
+
+.grid-item {
+  margin-left: 1.5em;
+}
+
+.grid-item img {
+  width: 100%;
 }
 
 body {
