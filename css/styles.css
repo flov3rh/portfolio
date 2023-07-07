@@ -7,7 +7,7 @@
 }
 
 .hamburguer {
-  display: hidden;
+  display: none;
   float: right;
 }
 
@@ -38,7 +38,7 @@ body {
   font-family: Inter, sans-serif;
 }
 
-button {
+label {
   display: none;
 }
 
@@ -78,8 +78,8 @@ span {
     display: none;
   }
 
-  button {
-    display: inline;
-    float: right;
+  .hamburguer {
+    display: block;
   }
+
 }
