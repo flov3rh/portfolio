@@ -73,9 +73,8 @@ span {
 }
 
 @media only screen and (max-width: 760px) {
-
   header nav {
-    position: relative
+    position: relative;
   }
 
   nav .list-format {
@@ -91,7 +90,8 @@ span {
     right: 0;
   }
 
-  .hamburguer:hover~.list-format, nav .list-format:hover {
+  nav .list-format:hover,
+  .hamburguer:hover ~ .list-format {
     display: flex;
     flex-direction: column;
     float: right;
