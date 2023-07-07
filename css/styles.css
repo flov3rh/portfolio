@@ -72,14 +72,28 @@ span {
   display: block;
 }
 
-
 @media only screen and (max-width: 760px) {
-  nav ul li {
+
+  header nav {
+    position: relative
+  }
+
+  nav .list-format {
+    background-color: #36b37e;
     display: none;
+    position: absolute;
+    right: 0;
   }
 
   .hamburguer {
     display: block;
+    position: absolute;
+    right: 0;
   }
 
+  .hamburguer:hover~.list-format {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
 }
