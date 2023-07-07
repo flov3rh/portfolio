@@ -38,6 +38,10 @@ body {
   font-family: Inter, sans-serif;
 }
 
+button {
+  display: none;
+}
+
 ul {
   color: #344563;
 }
@@ -73,5 +77,11 @@ span {
   nav ul li {
     display: none;
   }
+
+  button {
+    display: inline;
+    float: right;
+  }
+
 }
 }
