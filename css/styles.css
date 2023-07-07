@@ -6,6 +6,11 @@
   border-color: gray;
 }
 
+.hamburguer {
+  display: hidden;
+  float: right;
+}
+
 .background {
   margin: 0;
   height: 600px;
@@ -68,4 +73,5 @@ span {
   nav ul li {
     display: none;
   }
+}
 }
