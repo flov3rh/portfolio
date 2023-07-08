@@ -65,6 +65,16 @@ ul {
   font-weight: bold;
 }
 
+#middle .container .grid-item {
+  display: grid;
+  padding: 0;
+  grid-template-rows: auto;
+}
+
+#middle .container .grid-item img {
+  height: auto;
+}
+
 .hamburguer {
   display: none;
   float: right;
