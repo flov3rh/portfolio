@@ -71,8 +71,10 @@ ul {
   grid-template-rows: auto;
 }
 
-#middle .container .grid-item img {
-  height: auto;
+#middle .container .grid-item ul {
+  width: auto;
+  display: grid;
+  grid-template-columns: 40% 15% 30% 15%;
 }
 
 .hamburguer {
