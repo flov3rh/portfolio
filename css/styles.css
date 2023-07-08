@@ -7,6 +7,10 @@ ul {
   color: #344563;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 .container {
   display: grid;
   grid-gap: 0.5em;
