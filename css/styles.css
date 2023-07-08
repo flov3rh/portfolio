@@ -1,3 +1,36 @@
+ul li {
+  font-family: inherit;
+  margin: 0.5em;
+}
+
+ul {
+  color: #344563;
+}
+
+.list-container {
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: center;
+  grid-gap: 3%;
+}
+
+.list-container li {
+  background-color: rgba(235, 240, 238, 1);
+  width: 100%;
+  line-height: 1;
+  font-size: 0.6em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
 #down-button {
   margin: 3.5em auto;
   border: solid 0.1px;
@@ -7,7 +40,7 @@
 }
 
 #about {
-  width: 80%;7
+  width: 80%;
 }
 
 #about img {
@@ -16,18 +49,18 @@
   width: 50px;
 }
 
-#about div div{
+#about div div {
   background-color: lightgray;
 }
 
-#about div ul{
+#about div ul {
   padding-bottom: 25px;
 }
 
-#about div li{
+#about div li {
   color: rgba(54, 179, 126, 1);
   background-color: rgba(255, 255, 255, 1);
-  font-size: 0.66em;
+  font-size: 0.5em;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -61,35 +94,10 @@
   font-size: 1em;
 }
 
-.list-container {
-  width: inherit;
-  display: grid;
-  grid-template-columns: repeat(4, 20%);
-  justify-content: center;
-  grid-gap: 3%;
-}
-
 h3,
 h4 {
   text-align: center;
   font-weight: bold;
-}
-
-ul li {
-  font-family: inherit;
-  margin: 0.5em;
-}
-
-.list-container li {
-  background-color: rgba(235, 240, 238, 1);
-  width: 100%;
-  line-height: 1;
-  font-size: 0.6em;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 5px;
 }
 
 .container {
@@ -108,10 +116,6 @@ ul li {
   padding: 1em;
 }
 
-.grid-item img {
-  width: 100%;
-}
-
 .project-button {
   background-color: rgba(54, 179, 127, 1);
   border-radius: 5px;
@@ -128,10 +132,6 @@ body {
 
 label {
   display: none;
-}
-
-ul {
-  color: #344563;
 }
 
 a {
@@ -156,7 +156,6 @@ h1 span {
   display: block;
 }
 
-
 @media only screen and (max-width: 760px) {
   header nav {
     position: relative;
@@ -180,5 +179,15 @@ h1 span {
     display: flex;
     flex-direction: column;
     float: right;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-item {
+    margin-top: 20px;
+    font-size: 1.5em;
   }
 }
