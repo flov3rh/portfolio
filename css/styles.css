@@ -7,6 +7,22 @@ ul {
   color: #344563;
 }
 
+.container {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(3, 33%);
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.grid-item {
+  text-align: center;
+  border: 1px solid rgba(235, 240, 238, 1);
+  border-radius: 5px;
+  padding: 1em;
+}
+
 .list-container {
   width: inherit;
   display: grid;
@@ -75,7 +91,7 @@ ul {
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 1.5fr 3fr 1.5fr;
-  margin-left: -6px; 
+  margin-left: -6px;
 }
 
 .hamburguer {
@@ -111,22 +127,6 @@ h3,
 h4 {
   text-align: center;
   font-weight: bold;
-}
-
-.container {
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: repeat(3, 33%);
-  width: 90%;
-  margin: auto;
-  justify-content: center;
-}
-
-.grid-item {
-  text-align: center;
-  border: 1px solid rgba(235, 240, 238, 1);
-  border-radius: 5px;
-  padding: 1em;
 }
 
 .project-button {
