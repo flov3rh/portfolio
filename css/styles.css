@@ -72,9 +72,10 @@ ul {
 }
 
 #middle .container .grid-item ul {
-  width: auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: 40% 15% 30% 15%;
+  grid-template-columns: 3fr 1.5fr 3fr 1.5fr;
+  margin-left: -6px; 
 }
 
 .hamburguer {
