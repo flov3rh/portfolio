@@ -60,7 +60,9 @@ h2 {
 }
 
 #about {
-  width: 80%;
+  background-image: url("../background-about.png");
+  background-position: top ;
+  background-repeat: no-repeat;
 }
 
 #about img {
@@ -168,7 +170,7 @@ a {
 
 section {
   text-align: center;
-  margin: 6.5em auto;
+  margin: auto;
 }
 
 h1 {
