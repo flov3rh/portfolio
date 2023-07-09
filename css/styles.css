@@ -65,10 +65,23 @@ h2 {
   background-repeat: no-repeat;
 }
 
+#about ul li {
+  background-color: #ebf0ee;
+}
+
+#about ul {
+  width: auto;
+}
+
+#about ul ul li {
+  color: rgba(54, 179, 126, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  padding: 2px;
+}
+
 #about img {
-  border: 1px solid white;
-  border-radius: 100px;
-  width: 50px;
+  width: auto;
 }
 
 #middle .container .grid-item {
@@ -104,7 +117,7 @@ h2 {
   justify-content: space-around;
   margin: auto;
   padding: 0;
-  width: 30%;
+  width: 20%;
 }
 
 .font-style {
@@ -119,6 +132,10 @@ h2 {
 
 button {
   font-size: 17px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 h3,
