@@ -127,6 +127,14 @@ h2 {
   font-size: 1em;
 }
 
+.p-content {
+  font-size: 20px;
+}
+
+button {
+  font-size: 17px;
+}
+
 h3,
 h4 {
   text-align: center;
