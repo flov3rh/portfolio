@@ -1,3 +1,7 @@
+li {
+  font-size: 16px;
+}
+
 ul li {
   font-family: inherit;
   margin: 0.5em;
@@ -25,7 +29,7 @@ h2 {
   border: 1px solid rgba(235, 240, 238, 1);
   border-radius: 5px;
   margin: 0;
-  width:  auto;
+  width: auto;
 }
 
 .list-container {
@@ -62,7 +66,7 @@ h2 {
 
 #about {
   background-image: url("../background-about.png");
-  background-position: top ;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -72,11 +76,11 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#about>ul li {
+#about > ul li {
   background-color: #ebf0ee;
 }
 
-#about>ul ul li {
+#about > ul ul li {
   color: rgba(54, 179, 126, 1);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
@@ -104,7 +108,7 @@ h2 {
 #about .container .grid-item ul {
   width: auto;
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: 8px;
   align-items: center;
 }
@@ -127,10 +131,6 @@ h2 {
 
 .grid-li5 {
   grid-column: 6 / span 2;
-}
-
-li {
-  font-size: 16px;
 }
 
 #middle .container .grid-item {
@@ -276,6 +276,7 @@ h1 span {
   #about .container .grid-item ul {
     width: 80%;
   }
+
   .languages-li1 {
     grid-column: span 3;
   }
