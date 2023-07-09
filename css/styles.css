@@ -66,13 +66,13 @@ h2 {
 }
 
 #about ul {
+  width: 90%;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: auto;
 }
 
 #about ul li {
   background-color: #ebf0ee;
-  padding: 0;
 }
 
 #about ul ul li {
