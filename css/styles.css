@@ -182,8 +182,7 @@ h1 span {
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: auto;
   }
 
   .grid-item {
