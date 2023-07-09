@@ -65,12 +65,14 @@ h2 {
   background-repeat: no-repeat;
 }
 
-#about ul li {
-  background-color: #ebf0ee;
+#about ul {
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
 }
 
-#about ul {
-  width: auto;
+#about ul li {
+  background-color: #ebf0ee;
+  padding: 0;
 }
 
 #about ul ul li {
@@ -82,6 +84,13 @@ h2 {
 
 #about img {
   width: auto;
+}
+
+#about .container .grid-item ul {
+  width: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(9,auto);
 }
 
 #middle .container .grid-item {
