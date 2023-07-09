@@ -24,7 +24,6 @@ h2 {
   text-align: center;
   border: 1px solid rgba(235, 240, 238, 1);
   border-radius: 5px;
-  padding: 1em;
   margin: 0;
 }
 
@@ -33,7 +32,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 20%);
   justify-content: center;
-  grid-gap: 3%;
 }
 
 .list-container li {
