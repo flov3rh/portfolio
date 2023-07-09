@@ -102,7 +102,7 @@ h4 {
 
 .container {
   display: grid;
-  grid-gap: 3%;
+  grid-gap: 0.5em;
   grid-template-columns: repeat(3, 33%);
   width: 90%;
   margin: auto;
@@ -157,10 +157,6 @@ h1 span {
 }
 
 @media only screen and (max-width: 760px) {
-  #about {
-    margin-top: 33em;
-  }
-
   header nav {
     position: relative;
   }
@@ -190,7 +186,6 @@ h1 span {
   }
 
   .grid-item {
-    margin-top: 20px;
     font-size: 1.5em;
   }
 }
