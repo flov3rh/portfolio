@@ -73,7 +73,6 @@ h2 {
 #about ul {
   width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #about > ul li {
@@ -102,7 +101,7 @@ h2 {
 }
 
 #about img {
-  width: auto;
+  width: 100%;
 }
 
 #about .container .grid-item ul {
