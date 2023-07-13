@@ -21,7 +21,6 @@
   border-radius: 10px;
 }
 
-
 #about-me>ul{
   display: grid;
   grid-template-columns: repeat(3,1fr);
