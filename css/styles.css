@@ -12,13 +12,49 @@
   justify-content: space-around;
 }
 
-#middle {
+#middle, #about-me {
   width: 90%;
 }
 
 #middle article {
   border: lightgray 0.2px solid;
   border-radius: 10px;
+}
+
+
+#about-me>ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+#about-me>ul>li>ul{
+  border: 1px solid lightgray;
+  background-color: #EBF0EE;
+  height: 350px;
+}
+
+#about-me>ul>li>ul>li>ul{
+  display: grid;
+  grid-template: auto auto / repeat(9,1fr);
+  align-items: center;
+}
+
+.li-mid {
+  grid-column: span 5;
+}
+
+.li-long {
+  grid-column: span 7;
+}
+
+.li-center {
+  grid-column: 2 / 9;
+}
+
+#about-me>ul>li>ul>li>ul>li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
 }
 
 figure {
