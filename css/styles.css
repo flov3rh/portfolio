@@ -8,6 +8,8 @@
 
 #main ul {
   width: 30%;
+  display: flex;
+  justify-content: space-around;
 }
 
 #middle {
@@ -53,25 +55,24 @@ figure img {
 
 .list-format {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
   margin: auto;
   padding: 0;
 }
 
 .list-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(9,1fr);
-}
-
-.li-rails {
   background-color: red;
+  display: grid;
+  grid-template: auto / repeat(9, 1fr);
 }
 
 .list-grid li {
   background-color: #EBF0EE;
   border-radius: 10px;
+  padding: 5px;
+}
+
+.li-rails {
+  grid-column: 0 / span 9;
 }
 
 .font-style {
