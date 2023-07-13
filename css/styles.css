@@ -56,6 +56,21 @@ figure img {
   width: 30%;
 }
 
+.list-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+}
+
+.li-rails {
+  background-color: red;
+}
+
+.list-grid li {
+  background-color: #EBF0EE;
+  border-radius: 10px;
+}
+
 .font-style {
   color: #172b4d;
   line-height: 1.5em;
