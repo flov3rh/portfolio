@@ -23,6 +23,10 @@ figure img {
   width: 100%;
 }
 
+.greenish {
+  color: #36b37e;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -96,7 +100,6 @@ h1 {
 }
 
 span {
-  color: #36b37e;
   display: block;
 }
 
