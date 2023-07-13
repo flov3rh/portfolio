@@ -6,6 +6,10 @@
   border-color: gray;
 }
 
+#main ul {
+  width: 30%;
+}
+
 #middle {
   width: 90%;
 }
@@ -53,7 +57,6 @@ figure img {
   justify-content: space-around;
   margin: auto;
   padding: 0;
-  width: 30%;
 }
 
 .list-grid {
