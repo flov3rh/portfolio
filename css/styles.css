@@ -30,7 +30,7 @@ figure img {
 .container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 24px;
+  grid-gap: 1.5em;
 }
 
 .hamburguer {
