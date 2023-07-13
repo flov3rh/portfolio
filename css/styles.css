@@ -6,10 +6,13 @@
   border-color: gray;
 }
 
+#middle {
+  width: 90%;
+}
+
 #middle article {
   border: lightgray 0.2px solid;
   border-radius: 10px;
-  width: auto;
 }
 
 figure {
