@@ -6,6 +6,116 @@
   border-color: gray;
 }
 
+ul {
+  color: #344563;
+}
+
+ul li {
+  margin: 0.5em;
+}
+
+#main ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#middle {
+  width: 90%;
+}
+
+#middle article {
+  border: lightgray 0.2px solid;
+  border-radius: 10px;
+}
+
+.list-flex li {
+  background-color: #ebf0ee;
+  border-radius: 10px;
+  flex: 1 1 auto;
+  font-size: 12px;
+  padding: 11px 5px;
+}
+
+#about-me header {
+  background-image: url("../imgs/aboutme-background.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+#about-me > ul {
+  display: flex;
+}
+
+#about-me > ul > li > ul {
+  border: 1px solid lightgray;
+  background-color: #ebf0ee;
+  height: 350px;
+}
+
+#about-me > ul > li > ul > li > ul {
+  display: grid;
+  grid-template: auto auto / repeat(9, auto);
+  align-items: center;
+}
+
+#about-me > ul > li > ul > li > ul > li {
+  background-color: white;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.li-mid {
+  grid-column: span 6;
+}
+
+.li-long {
+  grid-column: span 7;
+}
+
+.li-center {
+  grid-column: 2 / 9;
+}
+
+.skills-item1 {
+  grid-column: 1 / 7;
+}
+
+.skills-item2 {
+  grid-column: 7 / 9;
+}
+
+.skills-item3 {
+  grid-column: 1 / 2;
+}
+
+.skills-item4 {
+  grid-column: 2 / 7;
+}
+
+.skills-item5 {
+  grid-column: 7 / 9;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+.greenish {
+  color: #36b37e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+}
+
 .hamburguer {
   display: none;
   float: right;
@@ -14,7 +124,7 @@
 .background {
   margin: 0;
   height: 600px;
-  background-image: url("../background.png");
+  background-image: url("../imgs/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,11 +132,13 @@
 
 .list-format {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
   margin: auto;
   padding: 0;
-  width: 30%;
+}
+
+.list-flex {
+  display: flex;
+  align-items: center;
 }
 
 .font-style {
@@ -42,14 +154,6 @@ label {
   display: none;
 }
 
-ul {
-  color: #344563;
-}
-
-ul li {
-  margin: 0.5em;
-}
-
 a {
   font-size: 0.8em;
   text-decoration: none;
@@ -59,29 +163,78 @@ a {
 
 section {
   text-align: center;
-  margin: 6.5em auto;
+  margin: 80px auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgba(23, 43, 77, 1);
+}
+
+p {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
 }
 
 h1 {
   font-size: 2.1em;
   font-weight: bold;
+  margin-top: 3em;
 }
 
 span {
-  color: #36b37e;
   display: block;
 }
 
+button {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px auto;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+button:active {
+  background-color: #008552;
+}
+
 @media only screen and (max-width: 760px) {
+  #about-me header {
+    background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
+    background-size: 100px, 600px;
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  #about-me > ul {
+    flex-direction: column;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
   header nav {
     position: relative;
   }
 
   nav .list-format {
     background-color: #36b37e;
-    display: none;
     position: absolute;
     right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .list-format > li {
+    display: none;
   }
 
   .hamburguer {
@@ -91,9 +244,11 @@ span {
   }
 
   nav .list-format:hover,
-  .hamburguer:hover ~ .list-format {
+  .hamburguer:hover ~ .list-format li {
     display: flex;
-    flex-direction: column;
-    float: right;
+  }
+
+  #about-me > ul > li > ul {
+    height: 500px;
   }
 }
