@@ -29,7 +29,7 @@ ul li {
   border-radius: 10px;
 }
 
-.list-grid li {
+.list-flex li {
   background-color: #ebf0ee;
   border-radius: 10px;
   padding: 5px;
@@ -66,7 +66,7 @@ ul li {
 }
 
 .li-mid {
-  grid-column: span 3;
+  grid-column: span 6;
 }
 
 .li-long {
@@ -135,9 +135,15 @@ figure img {
   padding: 0;
 }
 
-.list-grid {
-  display: grid;
-  grid-template: auto / repeat(9, 1fr);
+.list-flex {
+  display: flex;
+  align-items: center;
+}
+
+.list-flex li {
+  flex: 1 1 auto;
+  font-size: 12px;
+  padding: 11px 5px ;
 }
 
 .font-style {
@@ -220,10 +226,6 @@ button {
     display: block;
     position: absolute;
     right: 0;
-  }
-
-  .list-grid > li:first-child {
-    grid-column: 1 / span 5;
   }
 
   nav .list-format:hover,
