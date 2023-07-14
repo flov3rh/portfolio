@@ -32,7 +32,9 @@ ul li {
 .list-flex li {
   background-color: #ebf0ee;
   border-radius: 10px;
-  padding: 5px;
+  flex: 1 1 auto;
+  font-size: 12px;
+  padding: 11px 5px;
 }
 
 #about-me {
@@ -137,12 +139,6 @@ figure img {
 .list-flex {
   display: flex;
   align-items: center;
-}
-
-.list-flex li {
-  flex: 1 1 auto;
-  font-size: 12px;
-  padding: 11px 5px ;
 }
 
 .font-style {
