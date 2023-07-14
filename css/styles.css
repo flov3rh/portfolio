@@ -194,6 +194,12 @@ button {
   border-radius: 5px;
   padding: 10px;
   margin: 15px auto;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+button:active {
+  background-color: #008552;
 }
 
 @media only screen and (max-width: 760px) {
