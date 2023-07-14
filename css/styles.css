@@ -221,7 +221,11 @@ button {
     float: right;
   }
 
+  #about-me>ul>li>ul{
+    height: 500px;
+  }
+
   .list-grid>li:first-child {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
   }
 }
