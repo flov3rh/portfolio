@@ -45,15 +45,35 @@
 }
 
 .li-mid {
-  grid-column-end: 3;
+  grid-column: span 3;
 }
 
 .li-long {
-  grid-column: 2 / 8;
+  grid-column: span 7;
 }
 
 .li-center {
   grid-column: 2 / 8;
+}
+
+.skills-item1 {
+  grid-column: 1 / 7;
+}
+
+.skills-item2 {
+  grid-column: 7 / 9;
+}
+
+.skills-item3 {
+  grid-column: 1 / 2;
+}
+
+.skills-item4 {
+  grid-column: 2 / 7;
+}
+
+.skills-item5 {
+  grid-column: 7 / 9;
 }
 
 figure {
