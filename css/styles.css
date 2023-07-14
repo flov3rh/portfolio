@@ -37,11 +37,11 @@ ul li {
   padding: 11px 5px;
 }
 
-#about-me {
+#about-me header {
   background-image: url("../imgs/aboutme-background.png");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: contain;
+  background-size: cover;
 }
 
 #about-me > ul {
@@ -206,6 +206,13 @@ button:active {
 }
 
 @media only screen and (max-width: 760px) {
+  #about-me header {
+    background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
+    background-size: 100px, 600px;
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+  }
+
   #about-me > ul {
     flex-direction: column;
   }
