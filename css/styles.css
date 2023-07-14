@@ -23,7 +23,7 @@
 
 #about-me>ul{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template: auto / repeat(3,auto);
 }
 
 #about-me>ul>li>ul{
@@ -34,14 +34,26 @@
 
 #about-me>ul>li>ul>li>ul{
   display: grid;
-  grid-template: auto auto / repeat(9,1fr);
+  grid-template: auto auto / repeat(9,auto);
   align-items: center;
 }
 
 #about-me>ul>li>ul>li>ul>li {
   background-color: white;
-  padding: 10px;
+  padding: 8px;
   border-radius: 7px;
+}
+
+.li-mid {
+  grid-column-end: 3;
+}
+
+.li-long {
+  grid-column: 2 / 8;
+}
+
+.li-center {
+  grid-column: 2 / 8;
 }
 
 figure {
