@@ -6,6 +6,14 @@
   border-color: gray;
 }
 
+ul {
+  color: #344563;
+}
+
+ul li {
+  margin: 0.5em;
+}
+
 #main ul {
   width: 30%;
   display: flex;
@@ -21,6 +29,12 @@
   border-radius: 10px;
 }
 
+.list-grid li {
+  background-color: #ebf0ee;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 #about-me {
   background-image: url("../imgs/aboutme-background.png");
   background-repeat: no-repeat;
@@ -28,24 +42,24 @@
   background-size: contain;
 }
 
-#about-me>ul{
+#about-me > ul {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
 }
 
-#about-me>ul>li>ul{
+#about-me > ul > li > ul {
   border: 1px solid lightgray;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   height: 350px;
 }
 
-#about-me>ul>li>ul>li>ul{
+#about-me > ul > li > ul > li > ul {
   display: grid;
-  grid-template: auto auto / repeat(9,auto);
+  grid-template: auto auto / repeat(9, auto);
   align-items: center;
 }
 
-#about-me>ul>li>ul>li>ul>li {
+#about-me > ul > li > ul > li > ul > li {
   background-color: white;
   padding: 8px;
   border-radius: 7px;
@@ -97,7 +111,7 @@ figure img {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5em;
 }
 
@@ -126,12 +140,6 @@ figure img {
   grid-template: auto / repeat(9, 1fr);
 }
 
-.list-grid li {
-  background-color: #EBF0EE;
-  border-radius: 10px;
-  padding: 5px;
-}
-
 .font-style {
   color: #172b4d;
   line-height: 1.5em;
@@ -143,14 +151,6 @@ body {
 
 label {
   display: none;
-}
-
-ul {
-  color: #344563;
-}
-
-ul li {
-  margin: 0.5em;
 }
 
 a {
@@ -165,8 +165,11 @@ section {
   margin: 80px auto;
 }
 
-h1, h2, h3, p {
-  color:rgba(23, 43, 77, 1);
+h1,
+h2,
+h3,
+p {
+  color: rgba(23, 43, 77, 1);
 }
 
 h1 {
@@ -180,15 +183,15 @@ span {
 }
 
 button {
-  background-color: #36B37F;
-  color: #FFFFFF;
+  background-color: #36b37f;
+  color: #fff;
   border-radius: 5px;
   padding: 10px;
   margin: 15px auto;
 }
 
 @media only screen and (max-width: 760px) {
-  #about-me>ul{
+  #about-me > ul {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -209,7 +212,7 @@ button {
     flex-direction: column;
   }
 
-  nav .list-format>li {
+  nav .list-format > li {
     display: none;
   }
 
@@ -219,16 +222,16 @@ button {
     right: 0;
   }
 
+  .list-grid > li:first-child {
+    grid-column: 1 / span 5;
+  }
+
   nav .list-format:hover,
   .hamburguer:hover ~ .list-format li {
     display: flex;
   }
 
-  #about-me>ul>li>ul{
+  #about-me > ul > li > ul {
     height: 500px;
-  }
-
-  .list-grid>li:first-child {
-    grid-column: 1 / span 5;
   }
 }
