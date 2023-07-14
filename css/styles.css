@@ -43,8 +43,7 @@ ul li {
 }
 
 #about-me > ul {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
 }
 
 #about-me > ul > li > ul {
@@ -204,8 +203,7 @@ button:active {
 
 @media only screen and (max-width: 760px) {
   #about-me > ul {
-    display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .container {
