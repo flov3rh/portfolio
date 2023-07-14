@@ -12,7 +12,7 @@
   justify-content: space-around;
 }
 
-#middle, #about-me {
+#middle {
   width: 90%;
 }
 
@@ -21,9 +21,16 @@
   border-radius: 10px;
 }
 
+#about-me {
+  background-image: url("../imgs/aboutme-background.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
 #about-me>ul{
   display: grid;
-  grid-template: auto / repeat(3,auto);
+  grid-template-columns: repeat(3,auto);
 }
 
 #about-me>ul>li>ul{
