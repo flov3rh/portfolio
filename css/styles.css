@@ -197,9 +197,12 @@ button {
   color: #fff;
   border-radius: 5px;
   padding: 10px;
-  margin: 15px auto;
+  margin: 15px 0 0 15px;
   font-size: 17px;
   line-height: 24px;
+  font-family: 'Inter';
+  float: left;
+  border: none;
 }
 
 button:active {
@@ -207,22 +210,31 @@ button:active {
 }
 
 #form-section {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 30px;
+  /* padding: 10px; */
 }
 
 #form-section h2 {
-  width: 40%;
+  width: 30%;
   text-align: justify;
-  font-size: 30px;
-  line-height: 52px;
+  font-size: 16px;
+  line-height: 38px;
   font-weight: 700;
   font-style: normal;
+  font-family: 'Inter';
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+#form-section form {
+  width: 60%;
 }
 
 #form-section input,textarea {
   padding: 10px;
+  font-family: 'Inter';
 }
 
 .fullname {
@@ -242,10 +254,6 @@ button:active {
   margin: 10px;
 }
 
-#form-section form {
-  width: 50%;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -262,7 +270,7 @@ footer a.footer-mail {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #about-me header {
     background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
     background-size: 100px, 600px;
@@ -312,11 +320,12 @@ footer a.footer-mail {
   #form-section {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin-bottom: 0px;
   }
   
   #form-section form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -326,16 +335,20 @@ footer a.footer-mail {
   
   #form-section form input {
     margin-bottom: 15px;
-    width: 100%;
+    /* width: 100%; */
     padding: 0.5em;
     border: 1px solid lightgray;
     border-radius: 0.5em;
+  }
+
+  #form-section form #lastname {
+    display: none;
   }
   
   #form-section textarea {
     border: 1px solid lightgray;
     height: 100px;
-    width: 100%;
+    /* width: 100%; */
     padding: 0.5em;
     border-radius: 0.5em;
   }
@@ -352,6 +365,12 @@ footer a.footer-mail {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  #form-section button {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   footer a.footer-mail {
