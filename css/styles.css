@@ -205,6 +205,14 @@ button:active {
   background-color: #008552;
 }
 
+#form-section h2 {
+  font-size: 40px;
+  line-height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media only screen and (max-width: 760px) {
   #about-me header {
     background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
