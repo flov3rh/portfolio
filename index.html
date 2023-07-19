@@ -184,7 +184,10 @@
       </h2>
 
       <form class="" action="index.html" method="post">
-        <input class="font-style" type="text" name="user-name" placeholder="Full name" maxlength="30" required />
+        <div class="fullname">
+          <input class="font-style" type="text" name="user-name" placeholder="Full name" maxlength="30" required />
+          <input class="font-style" type="text" name="user-lastname" placeholder="Last Name" maxlength="30" required />
+        </div>
         <input class="font-style" type="email" name="user-email" placeholder="Email address" required />
         <textarea class="font-style" name="user-message" placeholder="Hey I'd like to connect to..." maxlength="500"></textarea>
         <button type="submit" name="message">Get in touch</button>
