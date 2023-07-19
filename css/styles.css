@@ -144,6 +144,7 @@ figure img {
 .font-style {
   color: #172b4d;
   line-height: 1.5em;
+  font-family: Inter, sans-serif;
 }
 
 body {
@@ -223,6 +224,22 @@ button:active {
   margin-bottom: 15px;
   width: 100%;
   padding: 0.5em;
+  border: 1px solid lightgray;
+  border-radius: 0.5em;
+}
+
+#form-section textarea {
+  border: 1px solid lightgray;
+  height: 100px;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+#form-section form input:focus,
+#form-section form textarea:focus {
+  outline: none;
+  border: 3px solid #60c095;
 }
 
 #form-section h2 {
