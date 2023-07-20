@@ -252,8 +252,9 @@ textarea {
 
 .fullname {
   display: flex;
-  width: 100%;
+  width: 97%;
   justify-content: space-between;
+  margin: auto;
 }
 
 footer {
@@ -277,6 +278,10 @@ footer a.footer-mail {
 
   #about-me > ul {
     flex-direction: column;
+  }
+
+  .fullname {
+    width: 100%;
   }
 
   .container {
