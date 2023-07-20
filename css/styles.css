@@ -37,6 +37,11 @@ ul li {
   padding: 11px 5px;
 }
 
+.footer-icon li {
+  display: inline-block;
+  font-size: 20px;
+}
+
 #about-me header {
   background-image: url("../imgs/aboutme-background.png");
   background-repeat: no-repeat;
@@ -144,6 +149,7 @@ figure img {
 .font-style {
   color: #172b4d;
   line-height: 1.5em;
+  font-family: Inter, sans-serif;
 }
 
 body {
@@ -155,10 +161,10 @@ label {
 }
 
 a {
-  font-size: 0.8em;
+  font-size: 1.2em;
   text-decoration: none;
   font-weight: bold;
-  color: inherit;
+  color: #505f79;
 }
 
 section {
@@ -196,16 +202,77 @@ button {
   color: #fff;
   border-radius: 5px;
   padding: 10px;
-  margin: 15px auto;
+  margin: 15px 0 0 15px;
   font-size: 17px;
   line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  border: none;
 }
 
 button:active {
   background-color: #008552;
 }
 
-@media only screen and (max-width: 760px) {
+#form-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: url(../imgs/form_background.png) no-repeat;
+  background-position: right bottom;
+}
+
+#form-section h2 {
+  width: 30%;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  padding-left: 20px;
+}
+
+#form-section form {
+  width: 60%;
+}
+
+#form-section button {
+  float: left;
+}
+
+#form-section input,
+textarea {
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  align-self: baseline;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d0d9d4;
+  margin: 10px;
+}
+
+.fullname {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+footer a.footer-mail {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   #about-me header {
     background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
     background-size: 100px, 600px;
@@ -215,6 +282,10 @@ button:active {
 
   #about-me > ul {
     flex-direction: column;
+  }
+
+  .fullname {
+    width: 100%;
   }
 
   .container {
@@ -250,5 +321,66 @@ button:active {
 
   #about-me > ul > li > ul {
     height: 500px;
+  }
+
+  #form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #form-section form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2em;
+    margin-top: 30px;
+  }
+
+  #form-section form input {
+    margin-bottom: 15px;
+    padding: 0.5em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+  }
+
+  #form-section form #lastname {
+    display: none;
+  }
+
+  #form-section textarea {
+    border: 1px solid lightgray;
+    height: 100px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+  }
+
+  #form-section form input:focus,
+  #form-section form textarea:focus {
+    outline: none;
+    border: 3px solid #60c095;
+  }
+
+  #form-section h2 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #form-section button {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer a.footer-mail {
+    font-weight: 400;
+    display: block;
+    font-size: 17px;
+    color: #42526e;
   }
 }
