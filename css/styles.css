@@ -201,7 +201,6 @@ button {
   font-size: 17px;
   line-height: 24px;
   font-family: 'Inter';
-  float: left;
   border: none;
 }
 
@@ -213,7 +212,6 @@ button:active {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* padding: 10px; */
 }
 
 #form-section h2 {
@@ -230,6 +228,10 @@ button:active {
 
 #form-section form {
   width: 60%;
+}
+
+#form-section button {
+  float: left;
 }
 
 #form-section input,textarea {
@@ -323,7 +325,7 @@ footer a.footer-mail {
     width: 100%;
     margin-bottom: 0px;
   }
-  
+
   #form-section form {
     width: 100%;
     display: flex;
@@ -332,7 +334,7 @@ footer a.footer-mail {
     padding: 1.2em;
     margin-top: 30px;
   }
-  
+
   #form-section form input {
     margin-bottom: 15px;
     /* width: 100%; */
@@ -344,7 +346,7 @@ footer a.footer-mail {
   #form-section form #lastname {
     display: none;
   }
-  
+
   #form-section textarea {
     border: 1px solid lightgray;
     height: 100px;
@@ -352,13 +354,13 @@ footer a.footer-mail {
     padding: 0.5em;
     border-radius: 0.5em;
   }
-  
+
   #form-section form input:focus,
   #form-section form textarea:focus {
     outline: none;
     border: 3px solid #60c095;
   }
-  
+
   #form-section h2 {
     font-size: 40px;
     line-height: 50px;
