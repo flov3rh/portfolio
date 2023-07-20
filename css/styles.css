@@ -217,6 +217,8 @@ button:active {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  background: url(../imgs/form_background.png) no-repeat;
+  background-position: right bottom;
 }
 
 #form-section h2 {
