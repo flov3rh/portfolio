@@ -255,13 +255,6 @@ textarea {
   margin: 10px;
 }
 
-.fullname {
-  display: flex;
-  width: 97%;
-  justify-content: space-between;
-  margin: auto;
-}
-
 footer {
   display: flex;
   flex-direction: column;
