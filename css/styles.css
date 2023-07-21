@@ -67,8 +67,9 @@ ul li {
 
 #about-me > ul > li > ul > li > ul > li {
   background-color: white;
-  padding: 8px;
+  padding: 8px 3px;
   border-radius: 7px;
+  font-size: 12px;
 }
 
 .li-mid {
