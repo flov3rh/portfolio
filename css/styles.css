@@ -1,3 +1,277 @@
+#down-button {
+  margin: 3.5em auto;
+  border: solid 0.1px;
+  padding: 0.2em;
+  border-radius: 10px;
+  border-color: gray;
+}
+
+ul {
+  color: #344563;
+}
+
+ul li {
+  margin: 0.5em;
+}
+
+#main ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#middle {
+  width: 90%;
+}
+
+#middle article {
+  border: lightgray 0.2px solid;
+  border-radius: 10px;
+}
+
+.list-flex li {
+  background-color: #ebf0ee;
+  border-radius: 10px;
+  flex: 1 1 auto;
+  font-size: 12px;
+  padding: 11px 5px;
+}
+
+.footer-icon li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#about-me header {
+  background-image: url("../imgs/aboutme-background.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+#about-me header p{
+  width: 70%;
+}
+
+#about-me > ul {
+  display: flex;
+}
+
+#about-me > ul > li > ul {
+  border: 1px solid lightgray;
+  background-color: #ebf0ee;
+  height: 350px;
+}
+
+#about-me > ul > li > ul > li > ul {
+  display: grid;
+  grid-template: auto auto / repeat(7, auto);
+  align-items: center;
+}
+
+#about-me > ul > li > ul > li > ul > li {
+  background-color: white;
+  padding: 8px 3px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.li-mid {
+  grid-column: span 4;
+}
+
+.li-long {
+  grid-column: span 5;
+}
+
+.li-center {
+  grid-column: 3 / 6;
+}
+
+.skills-item1 {
+  grid-column: 1 / 7;
+}
+
+.skills-item2 {
+  grid-column: 7 / 9;
+}
+
+.skills-item3 {
+  grid-column: 1 / 2;
+}
+
+.skills-item4 {
+  grid-column: 2 / 7;
+}
+
+.skills-item5 {
+  grid-column: 7 / 9;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+.greenish {
+  color: #36b37e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+}
+
+.hamburguer {
+  display: none;
+  float: right;
+}
+
+.background {
+  margin: 0;
+  height: 600px;
+  background-image: url("../imgs/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.list-format {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+.list-flex {
+  display: flex;
+  align-items: center;
+}
+
+.font-style {
+  color: #172b4d;
+  line-height: 1.5em;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+label {
+  display: none;
+}
+
+a {
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #505f79;
+}
+
+section {
+  text-align: center;
+  margin: 80px auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgba(23, 43, 77, 1);
+}
+
+p {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+span {
+  display: block;
+}
+
+button {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 25px 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+}
+
+button:active {
+  background-color: #008552;
+}
+
+#form-section {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: space-around;
+  background: url("../imgs/form-desktop.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#form-section h2 {
+  width: 30%;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  padding-left: 20px;
+}
+
+#form-section form {
+  width: 60%;
+}
+
+#form-section button {
+  float: left;
+}
+
+#form-section input,
+textarea {
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  align-self: baseline;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d0d9d4;
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+footer a.footer-mail {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #about-me header {
     background-image: url("../imgs/aboutme1.png"), url("../imgs/aboutme2.png");
@@ -130,279 +404,5 @@
   #main p {
     width: 70%;
     margin-bottom: 20px;
-  }
-  
-  #down-button {
-    margin: 3.5em auto;
-    border: solid 0.1px;
-    padding: 0.2em;
-    border-radius: 10px;
-    border-color: gray;
-  }
-
-  ul {
-    color: #344563;
-  }
-
-  ul li {
-    margin: 0.5em;
-  }
-
-  #main ul {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #middle {
-    width: 90%;
-  }
-
-  #middle article {
-    border: lightgray 0.2px solid;
-    border-radius: 10px;
-  }
-
-  .list-flex li {
-    background-color: #ebf0ee;
-    border-radius: 10px;
-    flex: 1 1 auto;
-    font-size: 12px;
-    padding: 11px 5px;
-  }
-
-  .footer-icon li {
-    display: inline-block;
-    font-size: 20px;
-  }
-
-  #about-me header {
-    background-image: url("../imgs/aboutme-background.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: cover;
-    margin-bottom: 70px;
-  }
-
-  #about-me header p{
-    width: 70%;
-  }
-
-  #about-me > ul {
-    display: flex;
-  }
-
-  #about-me > ul > li > ul {
-    border: 1px solid lightgray;
-    background-color: #ebf0ee;
-    height: 350px;
-  }
-
-  #about-me > ul > li > ul > li > ul {
-    display: grid;
-    grid-template: auto auto / repeat(7, auto);
-    align-items: center;
-  }
-
-  #about-me > ul > li > ul > li > ul > li {
-    background-color: white;
-    padding: 8px 3px;
-    border-radius: 7px;
-    font-size: 12px;
-  }
-
-  .li-mid {
-    grid-column: span 4;
-  }
-
-  .li-long {
-    grid-column: span 5;
-  }
-
-  .li-center {
-    grid-column: 3 / 6;
-  }
-
-  .skills-item1 {
-    grid-column: 1 / 7;
-  }
-
-  .skills-item2 {
-    grid-column: 7 / 9;
-  }
-
-  .skills-item3 {
-    grid-column: 1 / 2;
-  }
-
-  .skills-item4 {
-    grid-column: 2 / 7;
-  }
-
-  .skills-item5 {
-    grid-column: 7 / 9;
-  }
-
-  figure {
-    margin: 0;
-  }
-
-  figure img {
-    width: 100%;
-  }
-
-  .greenish {
-    color: #36b37e;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5em;
-  }
-
-  .hamburguer {
-    display: none;
-    float: right;
-  }
-
-  .background {
-    margin: 0;
-    height: 600px;
-    background-image: url("../imgs/background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .list-format {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-  }
-
-  .list-flex {
-    display: flex;
-    align-items: center;
-  }
-
-  .font-style {
-    color: #172b4d;
-    line-height: 1.5em;
-    font-family: Inter, sans-serif;
-  }
-
-  body {
-    font-family: Inter, sans-serif;
-  }
-
-  label {
-    display: none;
-  }
-
-  a {
-    font-size: 1.2em;
-    text-decoration: none;
-    font-weight: bold;
-    color: #505f79;
-  }
-
-  section {
-    text-align: center;
-    margin: 80px auto;
-  }
-
-  h1,
-  h2,
-  h3,
-  p {
-    color: rgba(23, 43, 77, 1);
-  }
-
-  p {
-    width: 90%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 32px;
-    margin: auto;
-  }
-
-  h1 {
-    font-size: 2.1em;
-    font-weight: bold;
-  }
-
-  span {
-    display: block;
-  }
-
-  button {
-    background-color: #36b37f;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 25px 0;
-    font-size: 17px;
-    line-height: 24px;
-    font-family: 'Inter', sans-serif;
-    border: none;
-  }
-
-  button:active {
-    background-color: #008552;
-  }
-
-  #form-section {
-    width: 100%;
-    display: flex;
-    padding-bottom: 50px;
-    justify-content: space-around;
-    background: url("../imgs/form-desktop.png");
-    background-size: cover;
-    background-position: bottom;
-  }
-
-  #form-section h2 {
-    width: 30%;
-    text-align: justify;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Inter', sans-serif;
-    padding-left: 20px;
-  }
-
-  #form-section form {
-    width: 60%;
-  }
-
-  #form-section button {
-    float: left;
-  }
-
-  #form-section input,
-  textarea {
-    padding: 10px;
-    font-family: 'Inter', sans-serif;
-    align-self: baseline;
-    width: 90%;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid #d0d9d4;
-    margin: 10px;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    width: 80%;
-    margin: auto;
-  }
-
-  footer a.footer-mail {
-    display: none;
   }
 }
