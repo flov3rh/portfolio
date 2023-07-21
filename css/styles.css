@@ -429,4 +429,12 @@ footer a.footer-mail {
       transform: rotate(360deg);
     }
   }
+
+  .container article button {
+    transition: padding 2s ease-in;
+  }
+
+  .container article button:hover {
+    padding: 10px 14px;
+  }
 }
