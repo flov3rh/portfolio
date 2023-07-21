@@ -217,9 +217,11 @@ button:active {
 #form-section {
   width: 100%;
   display: flex;
+  padding-bottom: 50px;
   justify-content: space-around;
-  background: url(../imgs/form_background.png) no-repeat;
-  background-position: right bottom;
+  background: url("../imgs/form-desktop.png");
+  background-size: cover;
+  background-position: bottom;
 }
 
 #form-section h2 {
@@ -329,6 +331,9 @@ footer a.footer-mail {
     flex-direction: column;
     width: 100%;
     margin-bottom: 0;
+    justify-content: space-around;
+    background: url("../imgs/form_background.png") no-repeat;
+    background-position: right bottom;
   }
 
   #form-section form {
