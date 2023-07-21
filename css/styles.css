@@ -47,6 +47,7 @@ ul li {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+  margin-bottom: 70px;
 }
 
 #about-me > ul {
