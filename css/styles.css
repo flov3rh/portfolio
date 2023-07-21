@@ -396,4 +396,8 @@ footer a.footer-mail {
   h1 {
     margin-top: 3em;
   }
+
+  #main ul {
+    font-size: 14px;
+  }
 }
