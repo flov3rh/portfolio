@@ -400,4 +400,9 @@ footer a.footer-mail {
   #main ul {
     font-size: 14px;
   }
+
+  #main p {
+    width: 70%;
+    margin-bottom: 20px;
+  }
 }
