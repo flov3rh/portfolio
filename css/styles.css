@@ -42,11 +42,31 @@ ul li {
   font-size: 20px;
 }
 
+p {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgba(23, 43, 77, 1);
+}
+
 #about-me header {
   background-image: url("../imgs/aboutme-background.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+  margin-bottom: 70px;
+}
+
+#about-me header p {
+  width: 70%;
 }
 
 #about-me > ul {
@@ -61,26 +81,27 @@ ul li {
 
 #about-me > ul > li > ul > li > ul {
   display: grid;
-  grid-template: auto auto / repeat(9, auto);
+  grid-template: auto auto / repeat(7, auto);
   align-items: center;
 }
 
 #about-me > ul > li > ul > li > ul > li {
   background-color: white;
-  padding: 8px;
+  padding: 8px 3px;
   border-radius: 7px;
+  font-size: 12px;
 }
 
 .li-mid {
-  grid-column: span 6;
+  grid-column: span 4;
 }
 
 .li-long {
-  grid-column: span 7;
+  grid-column: span 5;
 }
 
 .li-center {
-  grid-column: 2 / 9;
+  grid-column: 3 / 6;
 }
 
 .skills-item1 {
@@ -172,25 +193,9 @@ section {
   margin: 80px auto;
 }
 
-h1,
-h2,
-h3,
-p {
-  color: rgba(23, 43, 77, 1);
-}
-
-p {
-  width: 90%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 32px;
-  margin: auto;
-}
-
 h1 {
   font-size: 2.1em;
   font-weight: bold;
-  margin-top: 3em;
 }
 
 span {
@@ -202,7 +207,7 @@ button {
   color: #fff;
   border-radius: 5px;
   padding: 10px;
-  margin: 15px 0 0 15px;
+  margin: 25px 0;
   font-size: 17px;
   line-height: 24px;
   font-family: 'Inter', sans-serif;
@@ -216,9 +221,11 @@ button:active {
 #form-section {
   width: 100%;
   display: flex;
+  padding-bottom: 50px;
   justify-content: space-around;
-  background: url(../imgs/form_background.png) no-repeat;
-  background-position: right bottom;
+  background: url("../imgs/form-desktop.png");
+  background-size: cover;
+  background-position: bottom;
 }
 
 #form-section h2 {
@@ -252,13 +259,6 @@ textarea {
   margin: 10px;
 }
 
-.fullname {
-  display: flex;
-  width: 97%;
-  justify-content: space-between;
-  margin: auto;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -282,6 +282,10 @@ footer a.footer-mail {
 
   #about-me > ul {
     flex-direction: column;
+  }
+
+  .li-long {
+    grid-column: 2/7;
   }
 
   .fullname {
@@ -314,13 +318,13 @@ footer a.footer-mail {
     right: 0;
   }
 
-  nav .list-format:hover,
+  nav .list-format:hover li,
   .hamburguer:hover ~ .list-format li {
     display: flex;
   }
 
   #about-me > ul > li > ul {
-    height: 500px;
+    height: 300px;
   }
 
   #form-section {
@@ -328,6 +332,9 @@ footer a.footer-mail {
     flex-direction: column;
     width: 100%;
     margin-bottom: 0;
+    justify-content: space-around;
+    background: url("../imgs/form_background.png") no-repeat;
+    background-position: right bottom;
   }
 
   #form-section form {
@@ -382,5 +389,20 @@ footer a.footer-mail {
     display: block;
     font-size: 17px;
     color: #42526e;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    margin-top: 3em;
+  }
+
+  #main ul {
+    font-size: 14px;
+  }
+
+  #main p {
+    width: 70%;
+    margin-bottom: 20px;
   }
 }
