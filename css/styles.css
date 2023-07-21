@@ -431,10 +431,12 @@ footer a.footer-mail {
   }
 
   .container article button {
-    transition: padding 2s ease-in;
+    transition: border 2s,background-color 2s, color 2s ease-in;
   }
 
   .container article button:hover {
-    padding: 10px 14px;
+    border: 1px solid #36b37f;
+    background-color: white;
+    color: #36b37f;
   }
 }
