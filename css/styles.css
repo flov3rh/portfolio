@@ -405,4 +405,14 @@ footer a.footer-mail {
     width: 70%;
     margin-bottom: 20px;
   }
+
+  #main header nav ul li {
+    transition: background 1s;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  #main header nav ul li:hover {
+    background: #36b37e;
+  }
 }
