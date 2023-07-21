@@ -406,13 +406,27 @@ footer a.footer-mail {
     margin-bottom: 20px;
   }
 
-  #main header nav ul li {
+  #main header nav ul li a {
     transition: background 1s;
     border-radius: 5px;
     padding: 5px;
+    display: block;
   }
 
-  #main header nav ul li:hover {
+  #main header nav ul li a:hover {
+    animation: li-buzz;
+    animation-duration: 2s;
     background: #36b37e;
+    color: white;
+  }
+
+  @keyframes li-buzz {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
