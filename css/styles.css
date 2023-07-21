@@ -42,6 +42,21 @@ ul li {
   font-size: 20px;
 }
 
+p {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgba(23, 43, 77, 1);
+}
+
 #about-me header {
   background-image: url("../imgs/aboutme-background.png");
   background-repeat: no-repeat;
@@ -50,7 +65,7 @@ ul li {
   margin-bottom: 70px;
 }
 
-#about-me header p{
+#about-me header p {
   width: 70%;
 }
 
@@ -176,21 +191,6 @@ a {
 section {
   text-align: center;
   margin: 80px auto;
-}
-
-h1,
-h2,
-h3,
-p {
-  color: rgba(23, 43, 77, 1);
-}
-
-p {
-  width: 90%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 32px;
-  margin: auto;
 }
 
 h1 {
@@ -392,7 +392,7 @@ footer a.footer-mail {
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   h1 {
     margin-top: 3em;
   }
