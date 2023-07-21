@@ -405,4 +405,38 @@ footer a.footer-mail {
     width: 70%;
     margin-bottom: 20px;
   }
+
+  #main header nav ul li a {
+    transition: background 1s;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+  }
+
+  #main header nav ul li a:hover {
+    animation: li-buzz;
+    animation-duration: 2s;
+    background: #36b37e;
+    color: white;
+  }
+
+  @keyframes li-buzz {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container article button {
+    transition: border 2s, background-color 2s, color 2s ease-in;
+  }
+
+  .container article button:hover {
+    border: 1px solid #36b37f;
+    background-color: white;
+    color: #36b37f;
+  }
 }
