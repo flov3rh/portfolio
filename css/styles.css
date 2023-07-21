@@ -62,7 +62,7 @@ ul li {
 
 #about-me > ul > li > ul > li > ul {
   display: grid;
-  grid-template: auto auto / repeat(9, auto);
+  grid-template: auto auto / repeat(7, auto);
   align-items: center;
 }
 
@@ -74,15 +74,15 @@ ul li {
 }
 
 .li-mid {
-  grid-column: span 6;
+  grid-column: span 4;
 }
 
 .li-long {
-  grid-column: span 7;
+  grid-column: span 5;
 }
 
 .li-center {
-  grid-column: 2 / 9;
+  grid-column: 3 / 6;
 }
 
 .skills-item1 {
@@ -279,6 +279,10 @@ footer a.footer-mail {
 
   #about-me > ul {
     flex-direction: column;
+  }
+
+  .li-long {
+    grid-column: 2/7;
   }
 
   .fullname {
