@@ -397,6 +397,11 @@ footer a.footer-mail {
     margin-top: 3em;
   }
 
+  .list-icons li a:hover {
+    animation: vibrateIcon;
+    animation-duration: 0.25s;
+  }
+
   #main ul {
     font-size: 14px;
   }
@@ -414,19 +419,41 @@ footer a.footer-mail {
   }
 
   #main header nav ul li a:hover {
-    animation: li-buzz;
+    animation: li-spin;
     animation-duration: 2s;
     background: #36b37e;
     color: white;
   }
 
-  @keyframes li-buzz {
+  @keyframes li-spin {
     from {
       transform: rotate(0deg);
     }
 
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @keyframes vibrateIcon {
+    from {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(-15deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(15deg);
+    }
+
+    to {
+      transform: rotate(0deg);
     }
   }
 
