@@ -430,6 +430,33 @@ footer a.footer-mail {
     }
   }
 
+  .list-icons li a:hover {
+    animation: vibrateIcon;
+    animation-duration: 0.25s;
+  }
+
+  @keyframes vibrateIcon {
+    from {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(-15deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(15deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
   .container article button {
     transition: border 2s, background-color 2s, color 2s ease-in;
   }
