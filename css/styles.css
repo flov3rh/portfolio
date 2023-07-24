@@ -397,6 +397,11 @@ footer a.footer-mail {
     margin-top: 3em;
   }
 
+  .list-icons li a:hover {
+    animation: vibrateIcon;
+    animation-duration: 0.25s;
+  }
+
   #main ul {
     font-size: 14px;
   }
@@ -428,11 +433,6 @@ footer a.footer-mail {
     to {
       transform: rotate(360deg);
     }
-  }
-
-  .list-icons li a:hover {
-    animation: vibrateIcon;
-    animation-duration: 0.25s;
   }
 
   @keyframes vibrateIcon {
