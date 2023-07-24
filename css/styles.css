@@ -414,13 +414,13 @@ footer a.footer-mail {
   }
 
   #main header nav ul li a:hover {
-    animation: li-buzz;
+    animation: li-spin;
     animation-duration: 2s;
     background: #36b37e;
     color: white;
   }
 
-  @keyframes li-buzz {
+  @keyframes li-spin {
     from {
       transform: rotate(0deg);
     }
